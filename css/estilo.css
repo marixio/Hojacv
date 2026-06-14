@@ -1,0 +1,230 @@
+:root {
+    --color-fondo: #f0f0f0;
+    --color-primario: #FB5F0A;
+    --color-secundario: #333;
+    --color-tercerio: #FFF3E0  ;
+    --color-texto: #000000;
+
+/*
+    #FB5F0A (naranja principal)
+#1F2937 (gris azulado oscuro)
+#F3F4F6 (gris claro)
+#FFFFFF (blanco)
+#6B7280 (gris medio)*/
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    /* Nombre que tú elijas */
+    src: url('../Comfortaa-Regular.woff2') format('woff2');
+    /* Ruta de tu archivo */
+}
+
+body {
+    margin: 0;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+}
+
+.logo {
+    width: 80px;
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    background-color: var(--color-primario);
+    height: 5%;
+    margin: 0;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+a:hover {
+    color: black;
+}
+
+.contenedorHead {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    margin-right: 25px;
+    width: 100%;
+}
+
+/*///////////////////////////*/
+.datosPersonales {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 15px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+     margin: 20px;
+     padding: 10px;
+     border-radius: 10px;
+}
+
+.fotografia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.fotografia img {
+    width:350px;
+   
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.datos {
+
+    
+    width: 100%;
+
+}
+.nombreGrado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    font-size: 10px;
+    background-color: var(--color-tercerio);
+    color: var(--color-texto);
+    border-radius: 20px;
+}
+.nombreGrado h1 {
+   
+    text-align: center;
+  margin: 0px;
+}
+.nombreGrado h2 {
+  
+    text-align: center;
+    margin: 0px;
+}
+
+
+.datos h3 {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    width: 200px;
+
+}
+
+
+.boton {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+.boton a {
+    background-color: #FB5F0A;
+    color: white;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.boton a:hover {
+    text-decoration: underline;
+}
+
+.boton a:active {
+    background-color: #f85a05d5;
+    transform: scale(0.95);
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+   
+    padding: 5px 25px 0px 25px;
+    font-size: medium;
+    color: var(--color-texto);
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+.infoA {
+    color: var(--color-texto);
+    text-decoration: underline;
+    font-size: medium;
+
+}
+
+.infoA :hover {
+    color: var(--color-secundario);
+}
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+li {
+    margin: 5px 0;
+}
+.conteSkills {
+   display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px;
+   
+    gap: 20px;
+   
+}
+p{
+    margin: 0px;
+    text-align: justify;
+}
+.skills {
+    text-align: center;
+    background-color: var(--color-tercerio);
+    color: var(--color-texto);
+    text-transform: uppercase;
+    padding: 10px;
+  border-radius: 15px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-primario);
+    color: white;
+    margin-top: 20px;
+}
+@media (min-width: 768px) {
+
+    .conteSkills{
+        grid-template-columns: 1fr 1fr;
+    }
+    .datosPersonales {
+
+        flex-direction: row;
+    }
+
+    .nombreGrado {
+        font-size: medium;
+    }
+}
